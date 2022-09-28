@@ -34,9 +34,9 @@ function TopNav({ loggedAs, reloadAuth }) {
         <DesktopIcon style={{ transform: "scale(2)" }} />
       </div>
       <div className="links">
-        <NavLink className="link" to="/">
+        {/* <NavLink className="link" to="/">
           Dashboard
-        </NavLink>
+        </NavLink> */}
         <NavLink className="link" to="/Students">
           Students
         </NavLink>
@@ -45,6 +45,15 @@ function TopNav({ loggedAs, reloadAuth }) {
         </NavLink>
         <NavLink className="link" to="/Classes">
           Classes
+        </NavLink>
+        <NavLink className="link" to="/Subjects">
+          Subjects
+        </NavLink>
+        <NavLink className="link" to="/Grades">
+          Grades
+        </NavLink>
+        <NavLink className="link" to="/Cohorts">
+          Cohorts
         </NavLink>
       </div>
       <div className="user" onClick={() => setDropdown(!dropdown)}>
